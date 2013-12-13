@@ -14,5 +14,6 @@ int main()
 	debugFile.Add("line six is me!!");
 
 	debugFile.Show();
+	system("PAUSE");
 	return 0;
 }
