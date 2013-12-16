@@ -6,7 +6,7 @@
 		{
 		case TT_H: txtFile = new hTxtFile(); break;
 		case TT_V: 
-		default: txtFile = new vTxtFile(); break;
+		default:   txtFile = new vTxtFile(); break;
 		}
 	}
 

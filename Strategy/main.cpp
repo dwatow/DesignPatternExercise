@@ -1,23 +1,19 @@
-#include "strategy.h"
-#include "context.h"
+#include "CashContext.h"
 
 int main()
 {
-	Context* pContext;
+	//CashContext Cc(CT_Normal); //送進去操作
+	//CashContext Cc(CT_Rebate); //送進去操作
+	CashContext Cc(CT_Return); //送進去操作
+	Cc.SetPrice(100);
+	Cc.SetTotal(12);
 
-	ConcreateStratgyA a;
-	ConcreateStratgyB b;
-	ConcreateStratgyC c;
 
-	pContext = new Context(&a);
-	pContext->ContextInterface();
+	std::cout << " 單價: " << Cc.GetPrice()
+	          << " 數量: " << Cc.GetTotal()
+	          << " " << Cc.ConsumpTypeStr()
+	          << " 合計: " << Cc.GetResult()
+	          << std::endl;
 
-	pContext = new Context(&b);
-	pContext->ContextInterface();
-
-	pContext = new Context(&c);
-	pContext->ContextInterface();
-
-//	system("PAUSE");
 	return 0;
 }

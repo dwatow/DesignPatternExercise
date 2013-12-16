@@ -1,7 +1,7 @@
-¡m¤j¸Ü³]­p¼Ò¦¡¡nªº½m²ß
+ã€Šå¤§è©±è¨­è¨ˆæ¨¡å¼ã€‹çš„ç·´ç¿’
 This is a project of design pattern  of exercise.
 
-©M¤@¸sºô¤Í¤@°_¬İ³o¥»®Ñªºµ{¦¡½X½m²ß
+å’Œä¸€ç¾¤ç¶²å‹ä¸€èµ·çœ‹é€™æœ¬æ›¸çš„ç¨‹å¼ç¢¼ç·´ç¿’
 Reading this book and practice code with friends in HPXTN reading club
 
 tool: Sublime text 2 + g++ & makefile(MinGW)
