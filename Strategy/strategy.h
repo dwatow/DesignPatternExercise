@@ -14,7 +14,7 @@ class ConcreateStratgyA : public Strategy
 public:
     void AlgorithmInterface()
     {
-        std::cout << "ºtºâªkA¹ê²{" << std::endl;
+        std::cout << "æ¼”ç®—æ³•Aå¯¦ç¾" << std::endl;
     }
 };
 
@@ -23,7 +23,7 @@ class ConcreateStratgyB : public Strategy
 public:
     void AlgorithmInterface()
     {
-        std::cout << "ºtºâªkB¹ê²{" << std::endl;
+        std::cout << "æ¼”ç®—æ³•Bå¯¦ç¾" << std::endl;
     }
 };
 
@@ -32,7 +32,7 @@ class ConcreateStratgyC : public Strategy
 public:
     void AlgorithmInterface()
     {
-        std::cout << "ºtºâªkC¹ê²{" << std::endl;
+        std::cout << "æ¼”ç®—æ³•Cå¯¦ç¾" << std::endl;
     }
 };
 #endif

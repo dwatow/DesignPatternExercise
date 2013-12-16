@@ -1,3 +1,6 @@
+#ifndef HTXT_H
+#define HTXT_H
+
 #include "txt.h"
 #include <iostream>
 
@@ -10,3 +13,4 @@ public:
 			std::cout << *it << "\t";
 	};
 };
+#endif

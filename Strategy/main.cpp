@@ -18,6 +18,6 @@ int main()
 	pContext = new Context(&c);
 	pContext->ContextInterface();
 
-	system("PAUSE");
+//	system("PAUSE");
 	return 0;
 }

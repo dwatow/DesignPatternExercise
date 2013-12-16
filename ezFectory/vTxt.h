@@ -1,3 +1,6 @@
+#ifndef VTXT_H
+#define VTXT_H
+
 #include "txt.h"
 #include <iostream>
 
@@ -10,3 +13,4 @@ public:
 			std::cout << *it << "\n"; //std::endl;
 	};
 };
+#endif
