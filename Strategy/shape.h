@@ -1,14 +1,12 @@
 #ifndef SHAPE_H
 #define SHAPE_H
+#include "getAreaFunciotn.h"
 #include <string>
-
-enum ShapeType {CT_Normal, CT_Rebate, CT_Return};
 
 class shape
 {
-protected:
-
 public:
+	void SetPara(int i);
 	virtual int GetArea() = 0;
 	virtual std::string GetType() = 0;
 };

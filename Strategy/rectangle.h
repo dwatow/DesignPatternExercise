@@ -4,13 +4,22 @@
 
 class rectangle : public shape
 {
-	int m_xSide;
-	int m_ySide;
-	const std::string m_shapeType;
+    int m_xSide;
+    int m_ySide;
+    const m_type;
 public:
-	rectangle(int xSide, int ySide):m_xSide(xSide), m_ySide(ySide), m_shapeType("矩形"){};
-	int GetArea(){ return m_xSide * m_ySide; };	
-	std::string GetType(){ return m_shapeType; };
+    rectangle(int xSide, int ySide):m_xSide(xSide), m_ySide(ySide), m_type(ST_RECT)
+    {};
+
+    int GetArea()
+    { 
+        return m_xSide * m_ySide; 
+    }
+
+    std::string GetType()
+    {
+        return "矩形";
+    };
 
 };
 

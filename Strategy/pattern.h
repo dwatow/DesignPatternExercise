@@ -1,39 +1,13 @@
-#include "rectangle.h"
-#include "circle.h"
-
-enum shapeType {ST_CIRCLE, ST_RECT};
+#include "shape.h"
 
 class pattern
 {
 	shape* m_pShape;
-	int    m_totalShape;
+	int m_totalShape;
 public:
-	pattern(shapeType st)
+	pattern(shape* pSp)
 	{
-		switch(st)
-		{
-		case ST_CIRCLE:
-			m_pShape = new circle(15);
-			break;
-		case ST_RECT:
-		default:
-			m_pShape = new rectangle(5, 3);
-		}
-	}
-
-	void iShapeTotal(int ts)
-	{
-		m_totalShape = ts;
-	}
-
-	int oShapeTotal()
-	{
-		return m_totalShape;
-	}
-
-	std::string oShapeType()
-	{
-		m_pShape->GetType();
+		m_pShape = pSp;
 	}
 
 	int oArea()
