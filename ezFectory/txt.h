@@ -12,7 +12,7 @@ public:
 	void Add(std::string str)
 	{
 		strData.push_back(str);
-	};
+	}
 
 	virtual void Show() = 0;  //can't make object
 //	virtual void Show()

@@ -1,21 +1,23 @@
 #include "ezFactory.h"
+#include <cassert>
 
-	txtEzFactory::txtEzFactory(int n)
+txtEzFactory::txtEzFactory(TxtType n): txtFile(0)
+{
+	switch(n)
 	{
-		switch(n)
-		{
-		case TT_H: txtFile = new hTxtFile(); break;
-		case TT_V: 
-		default:   txtFile = new vTxtFile(); break;
-		}
+	case TT_H: txtFile = new hTxtFile(); break;
+	case TT_V: 
+	default:   txtFile = new vTxtFile();// break;
 	}
+}
 
-	void txtEzFactory::Add(std::string str)
-	{
-		txtFile->Add(str);
-	}
+void txtEzFactory::Add(std::string str)
+{
+	txtFile->Add(str);
+}
 
-	void txtEzFactory::Show()
-	{
-		txtFile->Show();
-	}
+void txtEzFactory::Show()
+{
+	assert (txtFile == 0);
+	txtFile->Show();
+}

@@ -11,6 +11,6 @@ public:
 	{
 		for (std::vector<std::string>::iterator it = strData.begin(); it != strData.end(); ++it)
 			std::cout << *it << "\t";
-	};
+	}
 };
 #endif
