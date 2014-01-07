@@ -7,15 +7,15 @@ class W9 : public MiItem
 {
 	void AddW9(std::vector<std::string>& _vstr) //打光
 	{
-		_vstr.push_back("白色 1點");
-		_vstr.push_back("白色 2點");
-		_vstr.push_back("白色 3點");
-		_vstr.push_back("白色 4點");
-		_vstr.push_back("白色 5點");
-		_vstr.push_back("白色 6點");
-		_vstr.push_back("白色 7點");
-		_vstr.push_back("白色 8點");
-		_vstr.push_back("白色 9點");
+		_vstr.push_back("White_ 1");
+		_vstr.push_back("White_ 2");
+		_vstr.push_back("White_ 3");
+		_vstr.push_back("White_ 4");
+		_vstr.push_back("White_ 5");
+		_vstr.push_back("White_ 6");
+		_vstr.push_back("White_ 7");
+		_vstr.push_back("White_ 8");
+		_vstr.push_back("White_ 9");
 	}
 public:
 	void AddItem(std::vector<std::string>& _vstr) //打光
