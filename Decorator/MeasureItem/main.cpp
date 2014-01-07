@@ -11,13 +11,13 @@ int main()
 	std::vector<MiItem*> msrChoose;
 
 	//choose UI for msrChoose list;
-	itemFactory ifty;
+//	itemFactory ifty;
 	int index;
 	cout << "what do you measure? \n [0]showMsrList [1]w9 [2]d25: ";
 	cin >> index;
 	while (index != 0)
 	{
-		msrChoose.push_back( ifty.CreatItem(index) ); //準備裝飾品
+		msrChoose.push_back( itemFactory::CreatItem(index) ); //準備裝飾品
 		cout << "what do you measure? \n [0]showMsrList [1]w9 [2]d25: ";
 		cin >> index;
 	}

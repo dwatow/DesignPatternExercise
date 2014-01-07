@@ -7,7 +7,7 @@
 class itemFactory
 {
 public:
-	MiItem* CreatItem(int intdex)
+	static MiItem* CreatItem(int intdex)
 	{
 		switch (intdex)
 		{
