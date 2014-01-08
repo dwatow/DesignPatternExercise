@@ -7,7 +7,7 @@
 
 class Proxy : IGiveGift
 {
-	Pursuit* m_pGG;
+	Pursuit* m_pGG;  //追求者 在代理中做事
 public:
 	Proxy(SchoolGirl* mm)
 	{
