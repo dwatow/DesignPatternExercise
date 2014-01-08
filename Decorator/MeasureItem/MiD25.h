@@ -34,7 +34,7 @@ class D25 : public MiItem
 		_vstr.push_back("黑色25點");
 	}
 public:
-	void AddItem(std::vector<std::string>& _vstr) //打光
+	void AddItem(std::vector<std::string>& _vstr)
 	{
 		m_measureItem->AddItem(_vstr);
 	    AddD25(_vstr);

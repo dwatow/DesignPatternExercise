@@ -5,7 +5,7 @@
 
 class W9 : public MiItem
 {
-	void AddW9(std::vector<std::string>& _vstr) //打光
+	void AddW9(std::vector<std::string>& _vstr)
 	{
 		_vstr.push_back("白色 1點");
 		_vstr.push_back("白色 2點");
@@ -18,7 +18,7 @@ class W9 : public MiItem
 		_vstr.push_back("白色 9點");
 	}
 public:
-	void AddItem(std::vector<std::string>& _vstr) //打光
+	void AddItem(std::vector<std::string>& _vstr)
 	{
 		m_measureItem->AddItem(_vstr);		
 		AddW9(_vstr);

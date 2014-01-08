@@ -18,7 +18,7 @@ public:
 
 	void AddItem(std::vector<std::string>& _vstr) //打光
 	{
-		if(m_measureItem != 0)
+		if(m_measureItem != 0)   //單純為了要檢查，如果m_measureItem在建構子就 != 0 就不用這一段
 			m_measureItem->AddItem(_vstr);
 	}
 };
