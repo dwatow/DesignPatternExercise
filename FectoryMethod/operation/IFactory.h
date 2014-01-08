@@ -1,8 +1,8 @@
-#ifndef FACT_H
-#define FACT_H
+#ifndef FACTORIES_H
+#define FACTORIES_H
 
-#include "FactoryInterface.h"
-#include "OperationObj.h"
+#include "IFactory.h"
+#include "Operations.h"
 
 class AddFactory : public IFactory
 {

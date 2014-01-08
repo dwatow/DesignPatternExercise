@@ -1,7 +1,7 @@
 #ifndef OPER_H
 #define OPER_H
 
-#include "OperationInterface.h"
+#include "Operation.h"
 
 class operAdd : public Operation
 {

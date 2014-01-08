@@ -4,6 +4,9 @@
 
 int main()
 {
+	//透明的擴充
+	//不修改原本的類之下擴充
+	//擴充本身就是proxy的特色
 	SchoolGirl* jiaojiao = new SchoolGirl();
 	jiaojiao->SetName("李嬌嬌");
 

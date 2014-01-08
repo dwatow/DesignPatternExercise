@@ -1,7 +1,7 @@
 #ifndef FACTORY_H
 #define FACTORY_H
 
-#include "OperationInterface.h"
+#include "Operation.h"
 
 struct IFactory
 {
