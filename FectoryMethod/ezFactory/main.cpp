@@ -5,8 +5,8 @@ using namespace std;
 
 int main()
 {
-	Operation* oper;
-	oper = OperatorFactory::creatOperate('/');
+	char operSymbol = '+';
+	Operation* oper = OperatorFactory::creatOperate(operSymbol);
 	oper->SetA(6);
 	oper->SetB(2);	
 	cout << oper->GetResult() << endl;

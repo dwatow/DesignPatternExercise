@@ -1,9 +1,8 @@
 #ifndef IGIVEGIFT_H
 #define IGIVEGIFT_H
 
-class IGiveGift
+struct IGiveGift
 {
-public:
 	void GiveDolls();
 	void GiveFlowers();
 	void GiveChocolate();

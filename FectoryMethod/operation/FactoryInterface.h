@@ -3,9 +3,8 @@
 
 #include "OperationInterface.h"
 
-class IFactory
+struct IFactory
 {
-public:
 	virtual Operation* creatOperation() = 0;
 };
 #endif
