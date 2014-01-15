@@ -23,7 +23,7 @@ int main()
 	//建構各個operation 的子類別產生的物件，各有不同。
 	//卻要執行相同的行為。
 	IFactory* factory = new ModFactory();  //用這個取代簡單工廠的switch
-	Operation* oper = factory->creatOperation();  //再這再new主要的運算子
+	Operation* oper = factory->creatOperation();  //在這再new主要的運算子
 
 	oper->SetA(60);
 	oper->SetB(7);	
