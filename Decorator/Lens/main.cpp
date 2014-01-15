@@ -19,5 +19,10 @@ int main()
 	cout << endl;
 	cout << "final light: " << outLight << endl;
 	cout << "THE END" << endl;
+
+	delete BigLGP;
+	delete convex;
+	delete concave;
+	
 	return 0;
 }

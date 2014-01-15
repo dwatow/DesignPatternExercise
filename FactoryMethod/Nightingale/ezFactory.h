@@ -4,6 +4,8 @@
 #include "Undergraduate.h"
 #include <string>
 
+//改成工廠方法之後，這個就再也用不到了。
+
 using namespace std;
 
 enum ServType{likeNi = 0, Volun};

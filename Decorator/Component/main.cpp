@@ -16,5 +16,9 @@ int main()
 
 	Deco2->Operation();
 
+	delete mainC;
+	delete Deco1;
+	delete Deco2;
+	
 	return 0;
 }

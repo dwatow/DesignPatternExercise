@@ -4,9 +4,8 @@
 #include <vector>
 #include <string>
 
-class Mi_
+struct Mi_
 {
-public:
 	virtual void AddItem(std::vector<std::string>& _vstr) = 0; //打光
 };
 #endif

@@ -7,5 +7,9 @@ int main()
 	student->Sweep();
 	student->Wash();
 	student->BuyRice();
+
+	delete factory;
+	delete student;
+	
 	return 0;
 }

@@ -30,6 +30,13 @@ public:
 		m_pShape->
 		return m_pShape;
 	}
+
+	shapFactory():m_pShape(0){}
+	~shapFactory()
+	{
+		if (m_pShape != 0)
+			delete m_pShape;
+	}
 };
 
 #endif

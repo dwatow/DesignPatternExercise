@@ -3,6 +3,8 @@
 #include "Undergraduate.h"
 #include "Volunteer.h"
 
+//由這個組合來取代ezFactory
+
 struct IFactory
 {
 	virtual Nightingale* creatNightingale() = 0;

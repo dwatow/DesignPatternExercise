@@ -17,5 +17,7 @@ int main()
 	daili->GiveFlowers();
 	daili->GiveChocolate();
 	
+	delete daili;
+
 	return 0;
 }

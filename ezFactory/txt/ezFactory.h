@@ -10,7 +10,12 @@ class txtEzFactory
 {
 	TxtFile* txtFile;
 public:
-	txtEzFactory(TxtType n);
+	txtEzFactory(TxtType n);//:txtFile(0){} .cpp已寫了
+	~txtEzFactory()
+	{
+		if (txtFile != 0)
+			delete txtFile;
+	}
 	void Add(std::string str);
 	void Show();
 };

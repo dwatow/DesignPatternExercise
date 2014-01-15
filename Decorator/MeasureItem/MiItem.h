@@ -11,6 +11,13 @@ protected:
 	Mi_* m_measureItem;
 
 public:
+	MiItem():m_measureItem(0)
+	~MiItem()
+	{
+		if (m_measureItem != 0)
+			delete m_measureItem;
+	}
+
 	void Then(Mi_* mi_ = 0)
 	{
 		m_measureItem = mi_;

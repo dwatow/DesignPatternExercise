@@ -30,4 +30,12 @@ public:
 	//策略模式的重點
 	CashContext(ConsumpType ct);
 	double GetResult();
+
+public:
+	CashContext():m_pcs(0){}
+	~CashContext()
+	{
+		if (m_pcs != 0)
+			delete m_pcs;
+	}
 };

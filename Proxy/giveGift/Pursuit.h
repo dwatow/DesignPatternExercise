@@ -15,6 +15,12 @@ public:
 		m_mama = mm;
 	}
 
+	~Pursuit()
+	{
+		if (m_mama != 0)
+			delete m_mama;
+	}
+
 	void GiveDolls()
 	{
 		cout << m_mama->GetName() << "送你娃娃" << endl;

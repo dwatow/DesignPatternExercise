@@ -18,5 +18,12 @@ public:
 		if(m_pComponent != 0)
 			m_pComponent->Operation();
 	}
+
+	Decorator():m_pComponent(0){}
+	~Decorator()
+	{
+		if (m_pComponent != 0)
+			delete m_pComponent;
+	}
 };
 #endif

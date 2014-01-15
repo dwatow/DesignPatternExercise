@@ -11,6 +11,8 @@ int main()
 	oper->SetB(2);	
 	cout << oper->GetResult() << endl;
 
+	delete oper;
+	
 	return 0;
 }
 

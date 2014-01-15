@@ -28,5 +28,11 @@ public:
 	{
 		m_pGG->GiveChocolate();
 	}
+
+	~Proxy()
+	{
+		if (m_pGG != 0)
+		delete m_pGG;
+	}
 };
 #endif
