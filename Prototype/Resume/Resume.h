@@ -5,7 +5,7 @@
 
 using namespace std;
 
-class Resume
+class Resume : public Prototype
 {
 	string m_name;
 	string m_sex;
@@ -34,6 +34,12 @@ public:
 	{
 		cout << m_name << " " << m_sex << " " << m_age << " " << endl;
 		cout << "工作經歷:" << m_timeRange << " " << m_company << endl;
+	}
+
+	//clone function of Resume in Prototype pattern
+	Resume* Clone()
+	{
+		return new Resume(*this);
 	}
 };
 

@@ -1,5 +1,9 @@
-#include "Resume.h"
+#include "ConcretePrototype1.h"
 #include "Prototype.h"
+#include "Resume.h"
+#include <iostream>
+
+using namespace std;
 
 int main()
 {
@@ -20,7 +24,27 @@ int main()
 //指標相等 = 傳遞位址。
 //但是在此並不是要這做，而是要建立物件。
 //在物件內使用clone，所以才使用原型模式。
-	ConcreteProrotype1
+/*
+	ConcretePrototype1* p1 = new ConcretePrototype1("I");
+	ConcretePrototype1* c1 = p1->Clone();
+
+	cout << "Clone: " << c1->GetId() << endl;
+*/
+
+	Resume* a = new Resume("大鳥");
+	a->SetPersonalInfo("男", "29");
+	a->SetWorkExperience("1998-2000", "奇菱科技");
+
+	Resume* b = a->Clone();  //會用clone就是Prototype pattern
+	b->SetWorkExperience("1998-2006", "奇菱光電");
+
+	Resume* c = a->Clone();  //會用clone就是Prototype pattern
+	c->SetPersonalInfo("男", "24");
+
+	a->Display();
+	b->Display();
+	c->Display();
+
 	return 0;
 }
 
