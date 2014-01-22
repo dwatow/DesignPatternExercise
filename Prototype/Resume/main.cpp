@@ -31,16 +31,16 @@ int main()
 	cout << "Clone: " << c1->GetId() << endl;
 */
 
-	Resume* a = new Resume("大鳥");
-	a->SetPersonalInfo("男1", "1");
-	a->SetWorkExperience("1998-2000", "奇菱科技");
+	Resume* a = new Resume("王一號");
+	a->SetPersonalInfo("男1", "10");
+	a->SetWorkExperience("1111-2222", "一號科技");
 
 	Resume* b = a->Clone();  //會用clone就是Prototype pattern
-	b->SetPersonalInfo("男2", "10");
-	b->SetWorkExperience("1998-2006", "奇菱光電");
+	//b->SetPersonalInfo("男2", "20");
+	b->SetWorkExperience("2222-3333", "二號光電");
 
 	Resume* c = a->Clone();  //會用clone就是Prototype pattern
-	c->SetPersonalInfo("男3", "20");
+	c->SetPersonalInfo("男3", "30");
 
 	a->Display();
 	b->Display();

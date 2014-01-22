@@ -52,7 +52,7 @@ public:
 	{
 		cout << m_name << " " << m_sex << " " << m_age << " " << endl;
 		cout << "工作經歷:" << m_pWork->GetWork() << " " << m_pWork->GetCompany() << endl;
-		printf("%x\n", m_pWork);
+		printf("m_pWork address: 0x%x\n", m_pWork);
 	}
 
 	//clone function of Resume in Prototype pattern
