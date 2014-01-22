@@ -32,18 +32,20 @@ int main()
 */
 
 	Resume* a = new Resume("大鳥");
-	a->SetPersonalInfo("男", "29");
+	a->SetPersonalInfo("男1", "1");
 	a->SetWorkExperience("1998-2000", "奇菱科技");
 
 	Resume* b = a->Clone();  //會用clone就是Prototype pattern
+	b->SetPersonalInfo("男2", "10");
 	b->SetWorkExperience("1998-2006", "奇菱光電");
 
 	Resume* c = a->Clone();  //會用clone就是Prototype pattern
-	c->SetPersonalInfo("男", "24");
+	c->SetPersonalInfo("男3", "20");
 
 	a->Display();
 	b->Display();
 	c->Display();
+
 
 	return 0;
 }
