@@ -15,6 +15,7 @@ public:
 		m_pPen   = p;
 	}	
 
+	//強迫覆寫純虛擬
 	void BuildHead()
 	{
 		cout << "建造頭" << endl;
