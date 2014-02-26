@@ -1,5 +1,6 @@
 #include "Secretary.h"
 #include <iostream>
+#include <algorithm>
 
 void Secretary::Set(string action)
 {
@@ -25,7 +26,6 @@ void Secretary::Notify()
 
 void Secretary::Detach(Observer* observer)
 {
-	;
-//    if (index >= 0 && index < m_observers.size())
-//        m_observers.erase(m_observers.begin() + index);  
+	vector<Observer*>::iterator removeBegin = remove(m_observers.begin(), m_observers.end(), observer);
+	m_observers.erase(removeBegin, m_observers.end());
 }

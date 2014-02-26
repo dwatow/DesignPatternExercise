@@ -8,26 +8,33 @@ using namespace std;
 
 int main()
 {
+	//老闆胡漢三
+	Boss* huhansan = new Boss();
+
 	//櫃台小姐童子婕
-	Secretary* tongzizhe = new Secretary();
+	//Secretary* tongzizhe = new Secretary();
 
 	//看股票的同事
-	Observer* tongshi1 = new StockObserver("魏關奼", tongzizhe);
-	Observer* tongshi2 = new StockObserver("易管查", tongzizhe);
+	Observer* tongshi1 = new StockObserver("魏關奼", huhansan);
+	//看NBA的同事
+	Observer* tongshi2 = new NBAObserver("易管查", huhansan);
 
 	//記下兩位同事
-	tongzizhe->Attach(tongshi1);
-	tongzizhe->Attach(tongshi2);
+	huhansan->Attach(tongshi1);
+	huhansan->Attach(tongshi2);
+
+	huhansan->Detach(tongshi1);
 
 	//發老闆回來了
-	tongzizhe->Set("老闆回來了");
+	huhansan->Set("老闆回來了");
 
 	//通知兩個同事
-	tongzizhe->Notify();
+	huhansan->Notify();
 
 	delete tongshi2;
 	delete tongshi1;
-	delete tongzizhe;
+	//delete tongzizhe;
+	delete huhansan;
 
 	return 0;
 }
