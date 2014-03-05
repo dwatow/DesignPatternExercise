@@ -13,28 +13,27 @@ class Secretary : public iSubject
 	string m_action;
 public:
 	//櫃台狀態
-	void Set(string action)
+	void SetSubject(const string& action)
 	{ m_action = action; }	
-	string Get()
+	const string GetSubject() const
 	{ return m_action; }
-private:
-	vector<Observer*> m_observers;
+//private:
+	//vector<Observer*> m_observers;
 public:
-	//增加
-	void Attach(Observer* observer)
-	{ m_observers.push_back(observer); }
-	//通知
-	void Detach(Observer* observer)
-	{
-		m_observers.erase(remove(m_observers.begin(), m_observers.end(), observer), m_observers.end());
-		delete observer;
-	}
+	////增加
+	//void Attach(Observer* observer)
+	//{ m_observers.push_back(observer); }
+	////通知
+	//void Detach(Observer* observer)
+	//{
+	//	m_observers.erase(remove(m_observers.begin(), m_observers.end(), observer), m_observers.end());
+	//	delete observer;
+	//}
+	event EventHandler Update;  //C# code
 
 	void Notify()
 	{
-		for (std::vector<Observer*>::iterator it = m_observers.begin(); it != m_observers.end(); ++it)
-			(*it)->Update();		
+		Update();		
 	}
-
 };
 #endif

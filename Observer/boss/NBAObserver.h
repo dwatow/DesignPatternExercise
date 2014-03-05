@@ -1,12 +1,12 @@
 #ifndef NBAOBSERVER_H
 #define NBAOBSERVER_H
-#include "Observer.h"
+//#include "Observer.h"
 #include "Subject.h"
 #include <iostream>
 
 using namespace std;
 
-class NBAObserver : public Observer
+class NBAObserver// : public Observer
 {
 	string m_name;
 	iSubject* m_pSub;
@@ -17,9 +17,9 @@ public:
 	bool operator==(const NBAObserver& comp)
 	{ return (m_name == comp.m_name) ? true : false; }
 
-	void Update()
+	void CloseNBALive()
 	{
-		cout << m_pSub->Get() << m_name << "關閉NBA，繼續工作！" << endl;
+		cout << m_pSub->GetSubject() << m_name << "關閉NBA，繼續工作！" << endl;
 	}
 };
 #endif

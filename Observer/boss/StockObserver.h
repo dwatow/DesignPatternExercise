@@ -1,12 +1,12 @@
 #ifndef STOCKOBSERVER_H
 #define STOCKOBSERVER_H
-#include "Observer.h"
+//#include "Observer.h"
 #include "Subject.h"
 #include <iostream>
 
 using namespace std;
 
-class StockObserver : public Observer
+class StockObserver// : public Observer
 {
 	string m_name;
 	iSubject* m_pSub;
@@ -17,9 +17,9 @@ public:
 	bool operator==(const StockObserver& comp)
 	{ return (m_name == comp.m_name) ? true : false; }
 	
-	void Update()
+	void CloseStockMarket()
 	{
-		cout << m_pSub->Get() << m_name << "關閉股票行情，繼續工作！" << endl;
+		cout << m_pSub->GetSubject() << m_name << "關閉股票行情，繼續工作！" << endl;
 	}
 };
 #endif
