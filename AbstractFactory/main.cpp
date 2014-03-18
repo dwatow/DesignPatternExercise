@@ -10,16 +10,16 @@ getUser(user)從資料庫取得資料
 */
 int main()
 {
-	User* user = new User();
-	Department* dept = new Department();
 	//iFactory* factory = new SqlSevFactory();
 	iFactory* factory = new AccessFactory();
 	
 	iUser* iu = factory->createUser();
+	User* user = new User();
 	iu->Insert(user);
 	iu->getUser(1);
 
 	iDepartment* id = factory->creatDepartment();
+	Department* dept = new Department();
 	id->Insert(dept);
 	id->getDeptName(1);
 //------------------ v2 ------------------
