@@ -3,22 +3,12 @@
 
 void ConcreteStateA::Handle(Context* context)
 {
-    State* pState = new ConcreteStateB();
-    context->setState(pState);
-}
-
-const char* ConcreteStateA::getType() const
-{
-    return "state A";
+	//決定下一個狀態是什麼
+    context->setState(new ConcreteStateB());
 }
 
 void ConcreteStateB::Handle(Context* context)
 {
-    State* pState = new ConcreteStateA();
-    context->setState(pState);
-}
-
-const char* ConcreteStateB::getType() const
-{
-    return "狀態B";
+	//決定下一個狀態是什麼
+    context->setState(new ConcreteStateA());
 }

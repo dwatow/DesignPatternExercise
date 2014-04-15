@@ -3,8 +3,7 @@
 
 int main()
 {
-    State* pState = new ConcreteStateA();
-    Context* pContext = new Context(pState);
+    Context* pContext = new Context(new ConcreteStateA());//init state
 
     pContext->Request();
     pContext->Request();

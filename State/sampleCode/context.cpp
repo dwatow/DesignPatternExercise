@@ -16,12 +16,14 @@ void Context::setState(State* state)
 {
     delete m_pState;
     m_pState = state;
-    cout << "當前狀態" << m_pState->getType() << endl;
 }
 
 void Context::Request()
 {
-    m_pState->Handle(this);//把this傳進去更新
+    m_pState->Handle(this);
+    //把自己傳進去 依目前狀態決定下一個狀態
+    //在state裡呼叫setState
+    cout << "當前狀態" << m_pState->getType() << endl;  //與狀態相關
 }
 
 Context::~Context()
