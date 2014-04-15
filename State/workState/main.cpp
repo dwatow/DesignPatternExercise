@@ -1,3 +1,4 @@
+
 #include "work.h"
 
 
@@ -17,7 +18,7 @@ int main()
 	emergencyProject->setHour(17);
 	emergencyProject->WriteProgram();
 
-	emergencyProject->setTaskFinished(true);
+	emergencyProject->TaskFinished(true);
 	emergencyProject->WriteProgram();
 	
 	emergencyProject->setHour(19);
