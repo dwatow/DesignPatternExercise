@@ -1,10 +1,18 @@
+#include "context.h"
 #include "concreateState.h"
 
 int main()
 {
-	context* c = new context(new concreateStateA() );
+    State* pState = new ConcreteStateA();
+    Context* pContext = new Context(pState);
 
-	c->Request();
+    pContext->Request();
+    pContext->Request();
+    pContext->Request();
+    pContext->Request();
+    pContext->Request();
+    pContext->Request();
+    pContext->Request();
 
-	return 0;
+    return 0;
 }

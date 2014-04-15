@@ -1,11 +1,12 @@
 #ifndef STATE_H
 #define STATE_H
 
-class context;
+class Context;
 
-class state
+class State
 {
 public:
-	virtual void Handle(context* cnxt) = 0;
+    virtual void Handle(Context* context) = 0;
+    virtual const char* getType() const = 0;
 };
 #endif

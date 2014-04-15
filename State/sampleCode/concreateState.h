@@ -2,21 +2,17 @@
 #define CONCREATESTATE_A_H
 #include "state.h"
 
-class concreateStateA : public state
+class ConcreteStateA : public State
 {
 public:
-	void Handle(context* cnxt)
-	{
-		cnxt->setState(new concreateStateB());
-	}
+	void Handle(Context* context);
+	const char* getType() const;
 };
 
-class concreateStateB : public state
+class ConcreteStateB : public State
 {
 public:
-	void Handle(context* cnxt)
-	{
-		cnxt->setState(new concreateStateA());
-	}
+	void Handle(Context* context);
+	const char* getType() const;
 };
 #endif
