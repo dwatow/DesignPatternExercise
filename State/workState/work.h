@@ -42,7 +42,10 @@ private:
 	State* m_pState;
 public:
 	void setState(State* state)
-	{ m_pState = state; }
+	{
+		delete m_pState;
+		m_pState = state; 
+	}
 	//const State* getState() const
 	//{ return m_pState; }
 
