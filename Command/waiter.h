@@ -1,19 +1,30 @@
 #ifndef WAITER_H
 #define WAITER_H
 #include "Command.h"
+#include <vector>
+#include <algorithm>
 
 class waiter
 {
-	Command* m_pCommand;
+	std::vector<Command*> orders;
+	//Command* m_pCommand;
 public:
 	void SetOrder(Command* pCmd)
 	{
-		m_pCommand = pCmd;
+		orders.push_back(pCmd);
+	}
+
+	void CancelOrder(Command* pCmd)
+	{
+		orders.erase(std::remove(orders.begin(), orders.end(), pCmd), orders.end());
 	}
 
 	void Notify()
 	{
-		m_pCommand->ExcuteCommend();
+		for (std::vector<Command*>::iterator it = orders.begin(); it != orders.end(); ++it)
+		{
+			(*it)->ExcuteCommend();
+		}
 	}
 };
 #endif
