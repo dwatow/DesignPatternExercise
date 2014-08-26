@@ -21,14 +21,25 @@ int main()
 	waiter girl;
 
 	girl.SetOrder(bakeMuttonCmd1);
-	girl.Notify();
+	//girl.Notify();
 	girl.SetOrder(bakeMuttonCmd2);
-	girl.Notify();
+	//girl.Notify();
 	girl.SetOrder(bakeChickenWing);
-	girl.Notify();
+	//girl.Notify();
 	girl.SetOrder(bakeMuttonCmd1);
 	girl.Notify();
 
+	//vector<Command*> command_list;
+//
+	//command_list.push_back(bakeMuttonCmd1);
+	//command_list.push_back(bakeMuttonCmd2);
+	//command_list.push_back(bakeChickenWing);
+	//command_list.push_back(bakeMuttonCmd1);
+//
+//for (std::vector<>::iterator i = .begin(); i != .end(); ++i)
+	//{
+//		
+	//}
 
 	return 0;
 }
