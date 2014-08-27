@@ -1,19 +1,19 @@
-#ifndef CONCREATEhANDLER1_H
-#define CONCREATEhANDLER1_H
+#ifndef CONCREATEhANDLER2_H
+#define CONCREATEhANDLER2_H
 #include "Handler.h"
 #include <iostream>
 #include <string>
 
-class ConcreateHandler1 : public Handler
+class ConcreateHandler2 : public Handler
 {
 public:
-	ConcreateHandler1(std::string name)
+	ConcreateHandler2(std::string name)
 	{
 		m_Name = name;
 	}
 	void HandleRequest(int request)
 	{
-		if (request >= 0 && request < 10)
+		if (request >= 10 && request < 20)
 		{
 			std::cout << GetType() << "處理請求" << request << std::endl;
 		}
