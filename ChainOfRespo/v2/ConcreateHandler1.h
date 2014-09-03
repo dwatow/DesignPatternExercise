@@ -11,6 +11,7 @@ public:
 	{
 		m_Name = name;
 	}
+	
 	void HandleRequest(int request)
 	{
 		if (request >= 0 && request < 10)
